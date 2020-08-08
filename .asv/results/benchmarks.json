@@ -1,0 +1,61 @@
+{
+    "benchmarks.MemSuite.mem_list": {
+        "code": "class MemSuite:\n    def mem_list(self):\n        return [0] * 256",
+        "name": "benchmarks.MemSuite.mem_list",
+        "param_names": [],
+        "params": [],
+        "timeout": 60.0,
+        "type": "memory",
+        "unit": "bytes",
+        "version": "abe86bab484550a681c61d7bb6eb081fbd37eb6d5009eba1df85c935530577b9"
+    },
+    "benchmarks.TimeSuite.time_hyperspy": {
+        "code": "class TimeSuite:\n    def time_hyperspy(self):\n        self.execute('import hyperspy.api')\n\n    def setup(self):\n        pass",
+        "min_run_count": 2,
+        "name": "benchmarks.TimeSuite.time_hyperspy",
+        "number": 0,
+        "param_names": [],
+        "params": [],
+        "processes": 2,
+        "repeat": 0,
+        "sample_time": 0.01,
+        "timeout": 60.0,
+        "type": "time",
+        "unit": "seconds",
+        "version": "24b3887ca8f76c61b3d0deea2c24d75e92d609241c61725865df7765216cbc47",
+        "warmup_time": -1
+    },
+    "benchmarks.TimeSuite.time_hyperspy_api_nogui": {
+        "code": "class TimeSuite:\n    def time_hyperspy_api_nogui(self):\n        self.execute('import hyperspy.api_nogui')\n\n    def setup(self):\n        pass",
+        "min_run_count": 2,
+        "name": "benchmarks.TimeSuite.time_hyperspy_api_nogui",
+        "number": 0,
+        "param_names": [],
+        "params": [],
+        "processes": 2,
+        "repeat": 0,
+        "sample_time": 0.01,
+        "timeout": 60.0,
+        "type": "time",
+        "unit": "seconds",
+        "version": "8cfba8a980ad46f9fae12a88745e3e5d2db2f37459d87cce9ad227c6801b9901",
+        "warmup_time": -1
+    },
+    "benchmarks.TimeSuite.time_signal": {
+        "code": "class TimeSuite:\n    def time_signal(self):\n        self.execute('from hyperspy._signals.signal1d import Signal1D')\n\n    def setup(self):\n        pass",
+        "min_run_count": 2,
+        "name": "benchmarks.TimeSuite.time_signal",
+        "number": 0,
+        "param_names": [],
+        "params": [],
+        "processes": 2,
+        "repeat": 0,
+        "sample_time": 0.01,
+        "timeout": 60.0,
+        "type": "time",
+        "unit": "seconds",
+        "version": "79ee0252e681d8a070de0a5958d8396702bbc2ac291ee20f3ce7e708d831f71c",
+        "warmup_time": -1
+    },
+    "version": 2
+}
