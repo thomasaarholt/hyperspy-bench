@@ -1,9 +1,4 @@
 {
-    "arch": "AMD64",
-    "cpu": "",
-    "machine": "smnpc-fp58",
-    "num_cpu": "8",
-    "os": "Windows 10",
-    "ram": "",
+    "machine": "generic_name",
     "version": 1
 }
