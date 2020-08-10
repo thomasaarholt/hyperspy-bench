@@ -1,9 +1,0 @@
-{
-    "arch": "test",
-    "cpu": "test",
-    "machine": "generic_name",
-    "num_cpu": "1",
-    "os": "test",
-    "ram": "1GB",
-    "version": 1
-}
