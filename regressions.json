@@ -1,1 +1,1 @@
-{"regressions": []}
+{"regressions": [["benchmarks.TimeSuite.time_hyperspy", "graphs/branch-master/machine-windows-latest/python-3.8/benchmarks.TimeSuite.time_hyperspy.json", {"machine": "windows-latest"}, null, 4.242404499999999, 1.5143124499999998, [[6762, 12478, 1.5143124499999998, 4.242404499999999]]]]}
