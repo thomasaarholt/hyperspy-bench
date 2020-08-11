@@ -10,7 +10,7 @@
     // The URL or local path of the source code repository for the
     // project being benchmarked
     "repo": ".",
-    "branches": ["master"], // Change to RELEASE_next_minor
+    "branches": ["RELEASE_next_minor"], // Change to RELEASE_next_minor
     "dvcs": "git",
     "environment_type": "conda",
     "pythons": ["3.8"],
