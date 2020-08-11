@@ -64,7 +64,7 @@
         "warmup_time": -1
     },
     "bench_other.BenchMultiFit.time_multifit": {
-        "code": "class BenchMultiFit:\n    def time_multifit(self):\n        \"Fit a gaussian in 600 positions using the default fitter\"\n        self.m.multifit()\n\n    def setup(self):\n        rg = Generator(PCG64(1))\n        G = Gaussian(centre=50, sigma=10)\n        x = np.arange(100)\n        data = G.function(x)\n        nav = Signal2D(rg.random((600,))).T\n        s = Signal1D(data) * nav\n        m = s.create_model()\n        m.append(G)\n        self.m = m",
+        "code": "class BenchMultiFit:\n    def time_multifit(self):\n        \"Fit a gaussian in 600 positions using the default fitter\"\n        self.m.multifit()\n\n    def setup(self):\n        rg = Generator(PCG64(1))\n        G = Gaussian(centre=50, sigma=10)\n        x = np.arange(100)\n        data = G.function(x)\n        nav = Signal1D(rg.random((600,))).T\n        s = Signal1D(data) * nav\n        m = s.create_model()\n        m.append(G)\n        self.m = m",
         "min_run_count": 2,
         "name": "bench_other.BenchMultiFit.time_multifit",
         "number": 0,
@@ -76,7 +76,7 @@
         "timeout": 60.0,
         "type": "time",
         "unit": "seconds",
-        "version": "b8ad6fa6a4af4a53dbf181bc5f15abd2115370be25af491ea5f78fa4ec62fad7",
+        "version": "d10705e946025d934a08a8d71d1f94db6d1e9c97344b07472af137209227f31d",
         "warmup_time": -1
     },
     "version": 2
